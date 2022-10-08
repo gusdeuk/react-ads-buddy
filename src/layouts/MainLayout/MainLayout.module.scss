@@ -1,0 +1,35 @@
+.main-layout {
+    background-color: transparent;
+    .loader-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 500;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    // some global stuff
+    :global {
+        .page-content-plus-nav {
+            // padding-left: 24px;
+            // padding-right: 24px;
+            // padding-top: 90px;
+            padding-bottom: 24px;
+        }
+        .nav-desktop-wrapper {
+            display: none;
+            @media (min-width: 960px) {
+                display: flex;
+            }
+        }
+        .nav-mobile-wrapper {
+            display: none;
+            @media (max-width: 959px) {
+                display: flex;
+            }
+        }
+    }
+}

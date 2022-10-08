@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-fuchsia</title>
+    <defs>
+        <path d="M12,0 C12,0 0.003,21.897 0,21.894 C3.058,20.484 6.416,19.596 9.953,19.347 C10.422,18.039 10.663,16.382 10.663,15.032 C10.663,15.032 9.516,15.075 8.434,15.203 L9.326,12.705 C11.108,12.705 10.662,9.145 11.999,7.448 C13.336,9.145 12.891,12.705 14.673,12.705 L15.565,15.203 C14.483,15.075 13.336,15.032 13.336,15.032 C13.336,16.382 13.577,18.039 14.046,19.347 C17.583,19.596 20.941,20.484 23.999,21.894 C23.997,21.897 12,0 12,0 Z" id="path-1"></path>
+    </defs>
+    <g id="_PWA---Local" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="COSITES" transform="translate(-17490.000000, -7771.000000)">
+            <g id="ico-fuchsia" transform="translate(17490.000000, 7771.000000)">
+                <circle id="Oval" fill="#DF216D" fill-rule="nonzero" opacity="0.1" cx="32" cy="32" r="32"></circle>
+                <g id="Clipped" transform="translate(20.000000, 20.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Path"></g>
+                    <rect id="Rectangle" fill="#DF216D" fill-rule="nonzero" mask="url(#mask-2)" x="-0.653" y="-0.551" width="25.6257" height="25.1598"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

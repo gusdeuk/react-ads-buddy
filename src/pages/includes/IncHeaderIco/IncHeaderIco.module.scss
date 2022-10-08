@@ -1,0 +1,38 @@
+/* ------------------------------------------------ */
+/* import global variables */
+@import "../../../styles/global-variables";
+
+/* ------------------------------------------------ */
+/* component scoped SCSS */
+/* ------------------------------------------------ */
+.inc-header-ico {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+
+    @media (max-width: $clx-break-max-width-2-sm) {
+        padding: 16px;
+    }
+    .text {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 1;
+        margin-left: 16px;
+        @media (max-width: $clx-break-max-width-2-sm) {
+            font-size: 20px;
+        }
+    }
+    .icon {
+        width: 48px;
+        height: 48px;
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        @media (max-width: $clx-break-max-width-2-sm) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

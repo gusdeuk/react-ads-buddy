@@ -1,0 +1,226 @@
+/* ------------------------------------------------ */
+/* import global variables */
+@import "../../../styles/global-variables";
+
+.nav-mobile-component {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 3000;
+    pointer-events: none;
+    // prevent text selection
+    user-select: none;
+
+    .nav-bar-mobile-home {
+        pointer-events: auto;
+        z-index: 2500;
+        position: fixed;
+    }
+    //--------------------------------------------------------------
+    // BOTTOM MENU
+    //--------------------------------------------------------------
+    .menu-mobile {
+        pointer-events: auto;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 3500;
+        height: 56px;
+        width: 56px;
+
+        .btn-hamburguer {
+            cursor: pointer;
+            color: #fff;
+            height: 56px;
+            width: 56px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: background-color 0.4s, color 0.4s;
+
+            // prevent hover on mobile
+            @media (hover: hover) and (pointer: fine) {
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.05);
+                    color: #68d9ff;
+                }
+            }
+
+            .menu-icon {
+                font-size: 24px;
+                margin-right: 0px;
+                margin-top: 0px;
+                height: 24px;
+            }
+            span {
+            }
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    //--------------------------------------------------------------
+    // PANEL EXPANDED
+    //--------------------------------------------------------------
+    .expanded-panel {
+        pointer-events: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: 3600;
+        width: 220px;
+
+        border-left: 1px solid #d9d9d9;
+        padding: 0;
+        box-shadow: -4px 0 16px 0 rgb(0 0 0 / 4%);
+        background-color: #ffffff;
+
+        overflow-y: auto;
+        overflow-y: overlay;
+
+        //--------------------------------------------------------------
+        // TOP
+        .top-actions {
+            padding: 24px 16px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .ball-logo {
+                width: 64px;
+                height: auto;
+                margin-bottom: 8px;
+            }
+            .user-name {
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 4px;
+            }
+            .user-email {
+                font-size: 14px;
+                color: $clx-color-neutral-6;
+                margin-bottom: 8px;
+            }
+            .user-role {
+                font-size: 14px;
+                color: $clx-color-neutral-7;
+                margin-bottom: 2px;
+            }
+
+            .btn-logout {
+                margin-top: 8px;
+            }
+        }
+        //--------------------------------------------------------------
+        // NAV CONTENT
+        .content-nav {
+            .wrapper-list {
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+
+                margin-bottom: 4px;
+
+                .item-single {
+                    color: $clx-color-neutral-7;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 12px 24px;
+                    transition: background-color 0.4s, color 0.4s;
+
+                    .item-label {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    &:hover {
+                        background-color: rgba($clx-color-theme-primary, 0.1);
+                    }
+                    &.selected {
+                        color: $clx-color-black;
+                        background-color: rgba($clx-color-neutral-1, 1);
+                    }
+                }
+
+                .item-section {
+                    color: $clx-color-neutral-7;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 12px 24px;
+                    transition: background-color 0.4s, color 0.4s;
+                    position: relative;
+                    cursor: pointer;
+
+                    .item-label {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    .item-icon {
+                        position: absolute;
+                        right: 16px;
+                        top: 14px;
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    &:hover {
+                        background-color: rgba($clx-color-theme-primary, 0.1);
+                    }
+                    &.selected {
+                        color: $clx-color-black;
+                        background-color: rgba($clx-color-neutral-1, 1);
+                    }
+                }
+                .section-sub-content {
+                    .item-sub {
+                        color: $clx-color-neutral-7;
+                        text-decoration: none;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 12px 24px 12px 44px;
+                        transition: background-color 0.4s, color 0.4s;
+                        position: relative;
+                        cursor: pointer;
+
+                        .item-label {
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 18px;
+                        }
+
+                        &:hover {
+                            background-color: rgba($clx-color-theme-primary, 0.1);
+                        }
+                        &.selected {
+                            color: $clx-color-black;
+                            background-color: rgba($clx-color-neutral-1, 1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //--------------------------------------------------------------
+    // PANEL EXPANDED OVERLAY
+    //--------------------------------------------------------------
+    .expanded-overlay {
+        background-color: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 3550;
+        pointer-events: all;
+    }
+}

@@ -1,0 +1,184 @@
+/* ----------------------------------------------------- */
+/* HELPERS GLOBAL*/
+/* ----------------------------------------------------- */
+
+.clx-link-blue {
+    color: $clx-color-theme-primary;
+}
+.clx-link-purple {
+    color: $clx-color-data-purple;
+}
+.clx-link-orange {
+    color: $clx-color-data-orange;
+}
+
+.clx-hlp-no-margin {
+    margin: 0 !important;
+}
+.clx-empty {
+    font-size: 0;
+}
+/* ----------------------------------------------------- */
+/* MIXINS */
+/* ----------------------------------------------------- */
+
+@mixin clx-use-box-colors {
+    &.white {
+        background-color: white;
+        color: $clx-color-neutral-7;
+    }
+    &.blue {
+        background-color: rgba($clx-color-theme-primary, 0.07);
+        color: darken($clx-color-theme-primary-dark, 10%);
+    }
+    &.purple {
+        background-color: rgba($clx-color-data-purple, 0.1);
+        color: darken($clx-color-data-purple, 10%);
+    }
+    &.grey {
+        background-color: rgba($clx-color-neutral-7, 0.075);
+        color: $clx-color-neutral-7;
+    }
+    &.fuchsia {
+        background-color: rgba($clx-color-data-fuchsia, 0.1);
+        color: darken($clx-color-data-fuchsia, 10%);
+    }
+    &.orange {
+        background-color: rgba($clx-color-data-orange, 0.15);
+        color: darken($clx-color-data-orange, 10%);
+    }
+    &.green {
+        background-color: rgba($clx-color-data-green, 0.12);
+        color: darken($clx-color-data-green, 10%);
+    }
+}
+
+/* ----------------------------------------------------- */
+/* HEADLINES AND BOXES */
+/* ----------------------------------------------------- */
+
+.clx-headline-title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.4;
+    color: $clx-color-neutral-8;
+    margin-bottom: 24px;
+    background-color: transparent;
+
+    // include color mixin
+    @include clx-use-box-colors;
+
+    padding: 16px 24px;
+    border-radius: 8px;
+    &.center {
+        text-align: center;
+    }
+    &.top-gutter {
+        margin-top: 32px;
+    }
+
+    @media (max-width: $clx-break-max-width-2-sm) {
+        font-size: 20px;
+        padding: 12px 16px;
+    }
+}
+
+.clx-headline-sub-title {
+    font-weight: 300;
+    font-size: 21px;
+    line-height: 1.4;
+    color: darken($clx-color-theme-primary-dark, 10%);
+    margin-bottom: 24px;
+    background-color: transparent;
+    border-bottom: solid 1px $clx-color-neutral-3;
+    padding: 8px 0;
+    &.center {
+        text-align: center;
+    }
+    &.top-gutter {
+        margin-top: 24px;
+    }
+
+    @media (max-width: $clx-break-max-width-2-sm) {
+        font-size: 17px;
+    }
+}
+
+.clx-desc-box {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    color: $clx-color-black;
+    background-color: transparent;
+    // include color mixin
+    @include clx-use-box-colors;
+
+    margin-bottom: 24px;
+    padding: 12px;
+    border-radius: 8px;
+    &.center {
+        text-align: center;
+    }
+    &.top-gutter {
+        margin-top: 24px;
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 8px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* ----------------------------------------------------- */
+/* MARGINS */
+/* ----------------------------------------------------- */
+
+.clx-margin-r16xb16 {
+    margin-right: 16px;
+    margin-bottom: 16px;
+}
+
+.clx-spacer-8 {
+    font-size: 0;
+    margin-bottom: 8px !important;
+    &::before {
+        content: "&nbsp;";
+    }
+}
+.clx-spacer-16 {
+    font-size: 0;
+    margin-bottom: 16px !important;
+    &::before {
+        content: "&nbsp;";
+    }
+}
+.clx-spacer-24 {
+    font-size: 0;
+    margin-bottom: 24px !important;
+    &::before {
+        content: "&nbsp;";
+    }
+}
+.clx-spacer-32 {
+    font-size: 0;
+    margin-bottom: 32px !important;
+    &::before {
+        content: "&nbsp;";
+    }
+}
+.clx-spacer-40 {
+    font-size: 0;
+    margin-bottom: 40px !important;
+    &::before {
+        content: "&nbsp;";
+    }
+}
+.clx-spacer-48 {
+    font-size: 0;
+    margin-bottom: 48px !important;
+    &::before {
+        content: "&nbsp;";
+    }
+}

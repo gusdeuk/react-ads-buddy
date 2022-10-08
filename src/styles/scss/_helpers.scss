@@ -1,0 +1,36 @@
+/* ----------------------------------------------------- */
+/* various helper classes */
+/* ----------------------------------------------------- */
+/* placeholders for inputs and areas */
+/* labels, links, truncate utils etc */
+
+/* Truncate utils */
+.truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.truncate-multiline-2 {
+    white-space: normal;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.truncate-multiline-3 {
+    white-space: normal;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

@@ -1,0 +1,25 @@
+.nav-desktop-component {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    display: flex;
+    .nav-bar {
+        //padding-right: 0 !important;
+    }
+}
+//--------------------------------------------------------------
+
+:global {
+    // FIX for on open drop down "movement" > selector pointing to material UI classes
+    [class*="MuiToolbar-root"] {
+        padding-right: 8px !important;
+    }
+}
+:global {
+    // FIX for on open drop down "movement" > selector pointing to material UI classes
+    [class*="MuiAppBar-root"] {
+        padding-right: 0 !important;
+    }
+}

@@ -1,0 +1,48 @@
+/* ------------------------------------------------ */
+/* import global variables */
+@import "../../../../styles/global-variables";
+
+.nav-tuto-component {
+    position: relative;
+    .mobile-collapser {
+        display: none;
+        position: absolute;
+        z-index: 5000;
+        top: -4px;
+        right: 0;
+        @media (max-width: $clx-break-max-width-2-sm) {
+            display: block;
+        }
+    }
+    .section-sub-content {
+        @media (max-width: $clx-break-max-width-2-sm) {
+            padding-top: 40px;
+            margin-bottom: 24px;
+        }
+        .item-sub {
+            color: $clx-color-neutral-7;
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            padding: 16px 24px;
+            transition: background-color 0.4s, color 0.4s;
+            position: relative;
+            cursor: pointer;
+
+            .item-label {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 16px;
+            }
+
+            &:hover {
+                background-color: rgba($clx-color-theme-primary, 0.1);
+            }
+            &.selected {
+                color: $clx-color-black;
+                background-color: rgba($clx-color-neutral-1, 1);
+                border-left: solid 4px $clx-color-theme-primary;
+            }
+        }
+    }
+}

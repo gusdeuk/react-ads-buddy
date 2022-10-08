@@ -1,0 +1,167 @@
+/* ------------------------------------------------ */
+/* import global variables */
+@import "../../styles//global-variables";
+
+.headline-duo-title {
+    &.hasMargin {
+        margin-bottom: 24px;
+    }
+
+    &.hasBgd {
+        background-color: #fff;
+        box-shadow: 0 4px 16px 0 rgb(0 0 0 / 4%);
+    }
+
+    &.center {
+        text-align: center;
+    }
+    &.left {
+        text-align: left;
+    }
+    &.right {
+        text-align: right;
+    }
+
+    .linear-text {
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.2;
+        display: inline-block;
+
+        &.small {
+            font-size: 26px;
+            font-weight: 500;
+        }
+
+        &.hasPadding {
+            padding: 24px 24px 20px 24px;
+        }
+    }
+
+    &.blue {
+        .linear-text {
+            background: $clx-gradient-blue;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        .linear-divider {
+            background: $clx-gradient-blue;
+            font-size: 0;
+            height: 2px;
+            opacity: 0.25;
+        }
+    }
+
+    &.purple {
+        .linear-text {
+            background: $clx-gradient-purple;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        .linear-divider {
+            background: $clx-gradient-purple;
+            font-size: 0;
+            height: 2px;
+            opacity: 0.25;
+        }
+    }
+
+    &.green {
+        .linear-text {
+            background: $clx-gradient-green;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        .linear-divider {
+            background: $clx-gradient-green;
+            font-size: 0;
+            height: 2px;
+            opacity: 0.25;
+        }
+    }
+
+    &.grey {
+        .linear-text {
+            background: $clx-gradient-grey;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        .linear-divider {
+            background: $clx-gradient-grey;
+            font-size: 0;
+            height: 2px;
+            opacity: 0.25;
+        }
+    }
+
+    &.orange {
+        .linear-text {
+            background: $clx-gradient-orange;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        .linear-divider {
+            background: $clx-gradient-orange;
+            font-size: 0;
+            height: 2px;
+            opacity: 0.25;
+        }
+    }
+
+    &.fuchsia {
+        .linear-text {
+            background: $clx-gradient-fuchsia;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        .linear-divider {
+            background: $clx-gradient-fuchsia;
+            font-size: 0;
+            height: 2px;
+            opacity: 0.25;
+        }
+    }
+
+    &.red {
+        .linear-text {
+            background: $clx-gradient-red;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+        .linear-divider {
+            background: $clx-gradient-red;
+            font-size: 0;
+            height: 2px;
+            opacity: 0.25;
+        }
+    }
+}
+
+@media (max-width: 959px) {
+    .headline-duo-title {
+        &.hasMargin {
+            margin-bottom: 18px;
+        }
+        .linear-text {
+            font-size: 21px;
+            font-weight: 600;
+            &.hasPadding {
+                padding: 20px 24px 14px 24px;
+            }
+            &.small {
+                font-size: 18px;
+            }
+        }
+
+        .linear-divider {
+            height: 2px !important;
+        }
+    }
+}

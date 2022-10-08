@@ -1,0 +1,80 @@
+/* ------------------------------------------------------- */
+/* globals / main layout */
+/* CONTENT area global layout elements / common css */
+/* ------------------------------------------------------- */
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+body {
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: scroll !important;
+    overflow-y: overlay !important;
+    padding-right: 0 !important;
+    // overscroll refresh
+    overscroll-behavior-y: contain;
+    // line-height: 1.3 !important;
+    // letter-spacing: 0 !important;
+    // color: #000 !important;
+    // font-family: "poppins", "Arial", "Helvetica", sans-serif !important;
+    // font-size: 13px !important;
+    background-color: #f8f9fb !important;
+
+    -webkit-font-smoothing: auto;
+    // -webkit-font-smoothing: subpixel-antialiased !important;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-overflow-scrolling: touch;
+    // disable webkit tap highlight
+    -webkit-tap-highlight-color: transparent;
+}
+/*
+Reserve these overrides for MUI v5
+h1 {
+    font-weight: 500 !important;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: 12px;
+    margin-top: 48px;
+}
+
+h2 {
+    font-weight: 500 !important;
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+h3 {
+    font-weight: 500 !important;
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 8px;
+    margin-top: 32px;
+}
+
+h4 {
+    font-weight: 500 !important;
+    font-size: 20px;
+    line-height: 1;
+    margin-bottom: 4px;
+    margin-top: 16px;
+}
+
+h5 {
+    font-weight: 500 !important;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 4px;
+    margin-top: 16px;
+}
+
+h6 {
+    font-weight: 500 !important;
+    font-size: 16px;
+    line-height: 1;
+    margin-bottom: 3px;
+    margin-top: 12px;
+}
+*/

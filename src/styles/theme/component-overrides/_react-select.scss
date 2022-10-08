@@ -1,0 +1,168 @@
+/* ------------------------------------------------ */
+/* react-select CUSTOM > single */
+/* ------------------------------------------------ */
+.custom-single-react-select {
+    .crs-single-__control {
+        height: 33px;
+        font-size: 11px;
+        min-height: 30px;
+        border: solid 1px #ced4da;
+
+        // hide focus
+        box-shadow: none !important;
+
+        &:hover {
+            border: solid 1px #ced4da;
+        }
+    }
+
+    .crs-single-__indicators {
+        right: 3px;
+        position: relative;
+
+        .crs-single-__indicator {
+            zoom: 0.75;
+            top: 0;
+            right: 0;
+            padding: 4px;
+            position: relative;
+        }
+    }
+
+    .crs-single-__indicator-separator {
+        display: none !important;
+    }
+
+    .crs-single-__menu {
+        font-size: 11px;
+        margin-top: 0;
+
+        .crs-single-__option {
+            padding: 5px 12px;
+            &.crs-single-__option--is-disabled {
+            }
+            &.crs-single-__option--is-selected {
+                background-color: #2eace0;
+            }
+        }
+    }
+
+    // custom classes for left aligned (custom icons version, see example in sandbox)
+    &.has-icons {
+
+        .crs-single-__single-value {
+            .selected-value {
+                display: flex;
+                align-items: center;
+                .selected-icon {
+                    height: 20px;
+                    width: 20px;
+                 }
+                .selected-label {
+                    margin-left: 5px;
+                }
+            }
+        }
+
+        .crs-single-__menu {
+            .crs-single-__option {
+                .option-item {
+                    display: flex;
+                    align-items: center;
+                    .option-icon {
+                        height: 20px;
+                        width: 20px;
+                    }
+                    .option-label {
+                        margin-left: 5px;
+                    }
+                }
+                &.crs-single-__option--is-disabled {
+                    .option-icon { opacity: 0.5}
+                }
+                &.crs-single-__option--is-selected {
+                    background-color: #2eace0;
+                }
+            }
+        }
+
+
+    }
+
+
+}
+
+/* ------------------------------------------------ */
+/* react-select CUSTOM > multi */
+/* ------------------------------------------------ */
+.custom-multi-react-select {
+    .crs-multi-__control {
+        height: 33px;
+        font-size: 11px;
+        min-height: 30px;
+        border: solid 1px #ced4da;
+
+        // hide focus
+        box-shadow: none !important;
+
+        &:hover {
+            border: solid 1px #ced4da;
+        }
+    }
+
+    .crs-multi-__indicators {
+        right: 3px;
+        position: relative;
+
+        .crs-multi-__indicator {
+            zoom: 0.75;
+            top: 0;
+            right: 0;
+            padding: 4px;
+            position: relative;
+        }
+    }
+
+    .crs-multi-__indicator-separator {
+        display: none !important;
+    }
+
+    .crs-multi-__menu {
+        font-size: 11px;
+        margin-top: 0;
+
+        .crs-multi-__option {
+            padding: 5px 12px;
+
+            .crs-single-__option--is-selected {
+                background-color: #2eace0;
+            }
+        }
+
+
+    }
+
+
+    .crs-multi-__value-container {
+        padding-left: 4px;
+
+        .crs-multi-__multi-value {
+            background-color: #efefef;
+            color: #666;
+
+            .crs-multi-__multi-value__label {
+                padding: 4px 1px 4px 10px;
+                font-size: 11px;
+            }
+
+            .crs-multi-__multi-value__remove {
+                &:hover {
+                    color: #1e1e1e;
+                    background-color: #dbdbdb;
+                }
+            }
+        }
+    }
+
+
+}

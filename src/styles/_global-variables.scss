@@ -1,0 +1,74 @@
+/* ----------------------------------------------------- */
+/* color pallette > shield with prefix CLX */
+/* ----------------------------------------------------- */
+
+$clx-break-max-width-1-xs: 599px;
+$clx-break-max-width-2-sm: 959px;
+$clx-break-max-width-3-md: 1279px;
+$clx-break-max-width-4-lg: 1919px;
+
+// theme base
+$clx-color-theme-gradient: linear-gradient(to right, #250056, #0076ae);
+$clx-color-theme-primary: #0768fd;
+$clx-color-theme-primary-dark: #0557d5;
+$clx-color-theme-primary-light: #ecf3ff;
+$clx-color-theme-primary-light-transparent: rgba(35, 114, 253, 0.08);
+
+// neutrals
+$clx-color-white: #fff;
+$clx-color-neutral-1: #f8f9fb;
+$clx-color-neutral-2: #f2f2f2;
+$clx-color-neutral-3: #e9e9e9;
+$clx-color-neutral-4: #d9d9d9;
+$clx-color-neutral-5: #b5b5b5;
+$clx-color-neutral-6: #999999;
+$clx-color-neutral-7: #595959;
+$clx-color-neutral-8: #444444;
+$clx-color-black: #000;
+
+// utils
+$clx-color-util-green: #00c221;
+$clx-color-util-orange: #ff9300;
+$clx-color-util-red: #e20000;
+
+// data vis > follow order
+$clx-color-data-purple: #9e54b0;
+$clx-color-data-blue: #015ff1;
+$clx-color-data-orange: #ff9300;
+$clx-color-data-yellow: #fecf33;
+$clx-color-data-fuchsia: #df216d;
+$clx-color-data-green: #00c221;
+$clx-color-data-red: #e20000;
+$clx-color-data-blue-dark: #10558a;
+// xtras
+$clx-color-data-green-light: #8ef29f;
+$clx-color-data-red-light: #ff4f4f;
+$clx-color-data-grey: #595959;
+
+// shadows
+$clx-color-box-shadow-1: 0 4px 16px 0 rgb(0 0 0 / 4%);
+
+// gradients
+$clx-gradient-blue: linear-gradient(to right, #00307c, #008cce);
+$clx-gradient-purple: linear-gradient(to right, #58006e, #9e54b0);
+$clx-gradient-orange: linear-gradient(to right, #b66a00, #fc9f1d);
+$clx-gradient-fuchsia: linear-gradient(to right, #a30041, #ff418d);
+$clx-gradient-green: linear-gradient(to right, #007414, #00c221);
+$clx-gradient-grey: linear-gradient(to right, #2d2d2d, #838383);
+$clx-gradient-yellow: linear-gradient(to right, #bb8f00, #fecf33);
+$clx-gradient-red: linear-gradient(to right, #790000, #ff0808);
+
+// --------------------------------------
+// old utils pallette
+// $clx-p-color-util-green: #6ac259;
+// $clx-p-color-util-red: #e86e6e;
+// $clx-p-color-util-purple: #7f63e4;
+// $clx-p-color-util-cyan: #4eb3ff;
+// $clx-p-color-util-orange: #ff9f38;
+
+// old utils pallette pastels
+// $clx-p-color-util-light-green: #cdecc7;
+// $clx-p-color-util-light-red: #efbdfb;
+// $clx-p-color-util-light-purple: #bdc3ff;
+// $clx-p-color-util-light-cyan: #b1dfff;
+// $clx-p-color-util-light-orange: #ffc991;

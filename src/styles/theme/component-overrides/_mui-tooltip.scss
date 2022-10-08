@@ -1,0 +1,10 @@
+/* ------------------------------------------------ */
+/* OVERRIDE EXAMPLE */
+
+.MuiTooltip-popper {
+    //z-index: 2900 !important;
+}
+.clx-class-name-for-specific-overides {
+    .MuiTooltip-popper {
+    }
+}

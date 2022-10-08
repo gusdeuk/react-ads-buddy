@@ -1,0 +1,95 @@
+/* ------------------------------------------------ */
+/* import global variables */
+@import "../../../styles/global-variables";
+
+/* ------------------------------------------------ */
+/* component scoped SCSS */
+/* ------------------------------------------------ */
+
+.component-clx-star {
+}
+//Etoiles
+$dimensions: 2px;
+$nombre: 500;
+$color: white;
+
+:global {
+    .clx-star {
+        position: absolute;
+        width: $dimensions;
+        height: $dimensions;
+        opacity: 0;
+        border-radius: 50%;
+
+        //Pour chaque étoile
+        @for $i from 1 through $nombre {
+            &:nth-child(#{$i}) {
+                //couleur
+                background-color: $color;
+
+                //Position ramdom et grossissement
+
+                $x: random(100);
+                $y: random(100);
+                $min: 20;
+                $max: 80;
+
+                @while $min < $x and $x < $max and $min < $y and $y < $max {
+                    $x: random(100);
+                    $y: random(100);
+                }
+
+                transform: translate($x * 1vw, $y * 1vh) scale(2);
+
+                //Durrée animation random entre 2s et 3s
+                $duree: (random(100) * 0.01+2) * 1s;
+
+                //Delai animation random entre 0 et 3s
+                $delai: (random(300) * 0.01) * 1s;
+
+                //animation timing function
+                $tfunction: cubic-bezier(0.97, 0.215, 0.98, 0.77);
+                //$tfunction: cubic-bezier(0.770, 0.240, 0.780, 0.495);
+                //$tfunction: cubic-bezier(0.750, 0.210, 0.890, 0.475);
+                & :local {
+                    animation: move $duree $tfunction $delai infinite;
+                }
+            }
+        }
+    }
+}
+
+@keyframes move {
+    0% {
+        //Chaque particule démarre au milieu du viewport
+        transform: translate(50vw, 50vh) scale(0.2);
+    }
+
+    20% {
+        opacity: 0.1;
+    }
+
+    30% {
+        opacity: 0.2;
+    }
+
+    40% {
+        opacity: 0.3;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

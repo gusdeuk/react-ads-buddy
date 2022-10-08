@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-blue</title>
+    <g id="_PWA---Local" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="COSITES" transform="translate(-17586.000000, -7771.000000)" fill="#005BF2" fill-rule="nonzero">
+            <g id="ico-blue" transform="translate(17586.000000, 7771.000000)">
+                <circle id="Oval" opacity="0.1" cx="32" cy="32" r="32"></circle>
+                <path d="M29.603,21 L27.207,23.397 L27.207,25.793 L23.612,25.793 C22.234,25.793 21.359,26.992 21.215,28.19 L20.017,40.173 C19.873,41.372 20.664,42.57 22.413,42.57 L41.587,42.57 C43.336,42.57 44.127,41.372 43.983,40.173 L42.785,28.19 C42.641,26.992 41.659,25.793 40.388,25.793 L36.793,25.793 L36.793,23.397 L34.397,21 L29.603,21 Z M29.603,23.397 L34.397,23.397 L34.397,25.793 L29.603,25.793 L29.603,23.397 Z M30.802,29.388 L33.198,29.388 L33.198,32.983 L36.793,32.983 L36.793,35.38 L33.198,35.38 L33.198,38.975 L30.802,38.975 L30.802,35.38 L27.207,35.38 L27.207,32.983 L30.802,32.983 L30.802,29.388 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

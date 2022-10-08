@@ -1,0 +1,78 @@
+/* ------------------------------------------------ */
+/* import global variables */
+@import "../../styles/global-variables";
+
+.page-base {
+    background-color: #f8f9fb;
+    &.page-wrapper {
+        padding-top: 56px;
+
+        /* ------------------------------------------------ */
+        /* Base layout styles */
+        /* ------------------------------------------------ */
+        .header {
+        }
+        .content {
+            width: 100%;
+            padding: 0 24px;
+
+            @media (max-width: $clx-break-max-width-2-sm) {
+                padding: 0 16px;
+            }
+
+            .base-card {
+                padding: 24px;
+                @media (max-width: $clx-break-max-width-2-sm) {
+                    padding: 16px;
+                }
+            }
+
+            .base-grid {
+                .col {
+                    &.left {
+                        padding-right: 24px;
+                        border-right: solid 1px $clx-color-neutral-3;
+                    }
+                    &.right {
+                        padding-left: 24px;
+                    }
+                    @media (max-width: $clx-break-max-width-2-sm) {
+                        &.left {
+                            padding-right: 0;
+                            border-right: none;
+                        }
+                        &.right {
+                            padding-left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ------------------------------------------------ */
+/* Simple responsive text styles for content */
+/* ------------------------------------------------ */
+.text-title1 {
+    font-size: 20px;
+    color: $clx-color-black;
+    font-weight: 600;
+    @media (max-width: $clx-break-max-width-2-sm) {
+        font-size: 18px;
+    }
+}
+.text-body1 {
+    font-size: 16px;
+    color: $clx-color-neutral-8;
+    @media (max-width: $clx-break-max-width-2-sm) {
+        font-size: 14px;
+    }
+}
+.text-body2 {
+    font-size: 14px;
+    color: $clx-color-black;
+    @media (max-width: $clx-break-max-width-2-sm) {
+        font-size: 13px;
+    }
+}

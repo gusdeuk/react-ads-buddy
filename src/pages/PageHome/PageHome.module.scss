@@ -1,0 +1,219 @@
+/* ------------------------------------------------ */
+/* import global variables */
+@import "../../styles/global-variables";
+
+/* ------------------------------------------------ */
+/* component scoped SCSS */
+/* ------------------------------------------------ */
+
+.page-home {
+    height: 100vh;
+
+    &.page-wrapper {
+        // padding-top: 56px;
+        position: relative;
+
+        a {
+            text-decoration: none;
+            display: block;
+        }
+        /* ------------------------------------------------ */
+        /* TOP HERO */
+        /* ------------------------------------------------ */
+        .top-hero {
+            z-index: 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            .hero-floating {
+                position: absolute;
+                left: 10vw;
+                top: 150px;
+                z-index: 2;
+                transform-origin: 0 0;
+                .welcome-txt {
+                    color: #fff;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 20px;
+                }
+                .buddy-logo-wrapper {
+                    transform-origin: 0 0;
+                    .buddy-logo {
+                    }
+                }
+            }
+
+            .astro-image-wrapper {
+                overflow: hidden;
+                position: relative;
+
+                .stars {
+                    z-index: 5000;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    @media (max-width: $clx-break-max-width-2-sm) {
+                        display: none;
+                    }
+                }
+                .astro-image {
+                    margin-top: 56px;
+                    width: 100%;
+                    min-height: 50vh;
+                    object-fit: cover;
+                    display: block;
+
+                    @media (max-width: $clx-break-max-width-2-sm) {
+                        min-height: 150px;
+                        width: 150%;
+                        margin-left: -25%;
+                    }
+                }
+            }
+
+            @media (max-width: $clx-break-max-width-4-lg) {
+                .hero-floating {
+                    top: 120px;
+                    transform: scale(0.9) !important;
+                }
+            }
+            @media (max-width: $clx-break-max-width-3-md) {
+                .hero-floating {
+                    top: 110px;
+                    transform: scale(0.8) !important;
+                }
+                .buddy-logo-wrapper {
+                    transform: scale(0.9) !important;
+                }
+            }
+            @media (max-width: $clx-break-max-width-2-sm) {
+                .hero-floating {
+                    top: 100px;
+                    transform: scale(0.7) !important;
+                }
+            }
+            @media (max-width: $clx-break-max-width-1-xs) {
+                .hero-floating {
+                    left: 16px;
+                    top: 80px;
+                    transform: scale(0.6) !important;
+                }
+                .buddy-logo-wrapper {
+                    transform: scale(0.7) !important;
+                }
+            }
+        }
+
+        /* ------------------------------------------------ */
+        /* HOME CONTENT */
+        /* ------------------------------------------------ */
+        .home-content {
+            z-index: 2;
+            position: absolute;
+            top: 400px;
+
+            .container-centered {
+                padding-top: 300px;
+                padding-left: 10vw;
+                padding-right: 10vw;
+
+                .cards-title {
+                    color: #fff;
+                    text-align: center;
+                    font-size: 32px;
+                }
+                .cards-wrapper {
+                    margin-top: 24px;
+                }
+                .credits-wrapper {
+                    margin-top: 36px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .iq-water {
+                        flex: 1 1 auto;
+                    }
+
+                    .app-version {
+                        margin-top: 16px;
+                        color: rgba(255, 255, 255, 0.607);
+                        font-size: 12px;
+                        font-weight: 300;
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+
+            .bgd-main-shape-wrapper {
+                position: absolute;
+                z-index: -5;
+                top: 0;
+
+                left: 0;
+                right: 0;
+
+                @media (max-width: $clx-break-max-width-2-sm) {
+                }
+                .bgd-main-shape {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                }
+            }
+
+            @media (max-width: $clx-break-max-width-4-lg) {
+                top: 350px;
+                .container-centered {
+                    padding-top: 230px !important;
+                }
+                .cards-title {
+                    font-size: 28px !important;
+                }
+            }
+            @media (max-width: $clx-break-max-width-3-md) {
+                top: 300px;
+                .container-centered {
+                    padding-top: 180px !important;
+                }
+                .cards-title {
+                    font-size: 24px !important;
+                }
+            }
+            @media (max-width: $clx-break-max-width-2-sm) {
+                top: 250px;
+                .container-centered {
+                    padding-top: 150px !important;
+                }
+            }
+            @media (max-width: $clx-break-max-width-1-xs) {
+                top: 200px;
+                .container-centered {
+                    padding-top: 90px !important;
+                    padding-left: 16px !important;
+                    padding-right: 16px !important;
+                }
+            }
+        }
+
+        /* ------------------------------------------------ */
+        /* SUPER BGD */
+        /* ------------------------------------------------ */
+        .super-bgd {
+            position: fixed;
+            z-index: -100;
+            background-color: #332973;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}

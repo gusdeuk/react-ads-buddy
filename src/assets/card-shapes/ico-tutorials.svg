@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ico-purple</title>
+    <g id="_PWA---Local" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="COSITES" transform="translate(-17790.000000, -7771.000000)" fill="#9E54B0" fill-rule="nonzero">
+            <g id="ico-purple" transform="translate(17790.000000, 7771.000000)">
+                <circle id="Oval" opacity="0.1" cx="32" cy="32" r="32"></circle>
+                <path d="M32,22 L20,28.55 L32,35.09 L41.818,29.73 L41.818,37.27 L44,37.27 L44,28.55 M24.364,33.11 L24.364,37.47 L32,41.64 L39.636,37.47 L39.636,33.11 L32,37.27 L24.364,33.11 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
