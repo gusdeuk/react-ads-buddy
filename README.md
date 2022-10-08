@@ -1,7 +1,7 @@
 ![El Pixelista logo](https://www.elpixelista.com/xtras/cdn/banner1.png)
 
 # ADS BUDDY
-Welcome to ADS Buddy.
+Welcome to ADS Buddy .
 Here you will find tutorials, documentation, assets, and everything you may need in order to master the Apollo Design System.
 
 ## General Built-In Features > Built on Rocket Starter Boilerplate
